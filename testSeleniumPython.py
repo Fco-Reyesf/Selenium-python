@@ -2,7 +2,7 @@
 from selenium.webdriver import Edge
 
 
-driver = Edge(executable_path="C:\\Users\\reyes\\Desktop\\edge_test_python\\edgedriver_win64\\msedgedriver.exe")
+driver = Edge(executable_path=".\\edge_driver_selenium\\edgedriver_win64\\msedgedriver.exe")
 
 # entrar a la pagina web
 driver.get("https://rahulshettyacademy.com/#/index")
