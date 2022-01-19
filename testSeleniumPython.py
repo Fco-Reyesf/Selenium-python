@@ -41,9 +41,9 @@ mostrara la cantidad de elementos que encuentre, si solo muestra uno, entonces, 
 -------------------------------------------------------------------------------------------------------------------------
 [metodo con xpath]
 
-ingrsar en la consola del navegador 
+ingresar en la consola del navegador 
 
-$"//input[@type='submit']"
+$x("//input[@type='submit']")
 
 como resultado mostrara la cantidad de elementos existentes
 '''
