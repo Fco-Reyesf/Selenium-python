@@ -7,7 +7,7 @@ from selenium.webdriver.support.select import Select
 
 
 # para cambiar el navegador, solo se debe cambiar el driver
-driver = webdriver.Edge(executable_path=".\\edge_driver_selenium\\edgedriver_win64\\msedgedriver.exe")
+driver = webdriver.Edge(service=Service(".\\edge_driver_selenium\\edgedriver_win64\\msedgedriver.exe"))
 driver.maximize_window() # pantalla completa
 
 

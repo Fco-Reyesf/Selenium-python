@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # para cambiar el navegador, solo se debe cambiar el driver
-driver = webdriver.Edge(executable_path=".\\edge_driver_selenium\\edgedriver_win64\\msedgedriver.exe")
+driver = webdriver.Edge(service=Service(".\\edge_driver_selenium\\edgedriver_win64\\msedgedriver.exe"))
 driver.maximize_window() # pantalla completa
 driver.get("https://login.salesforce.com/?locale=es")   # pagina para la practica
 
