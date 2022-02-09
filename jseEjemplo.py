@@ -2,12 +2,9 @@
 Cuando selenium modifica algo en la página, no se puede rescatar normalmente, 
 por lo que, hay que ingresar comandos js DOM, estos comando permiten acceder a cualquier elemento de la pagina.
 '''
-
-import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.edge.service import Service
-from selenium.webdriver.support.wait import WebDriverWait
 
 driver = webdriver.Edge(service=Service(".\\edge_driver_selenium\\edgedriver_win64\\msedgedriver.exe"))
 # driver = webdriver.Edge(executable_path=".\\edge_driver_selenium\\edgedriver_win64\\msedgedriver.exe")

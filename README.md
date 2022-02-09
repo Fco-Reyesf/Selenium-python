@@ -1,6 +1,5 @@
 # Selenium-python
 practica de QA automatizado con selenium en python
 
-# En este proyecto  se realizan las siguientes acciones
+(PROXIMAMENTE EDITADO PARA INGRESAR LA TORALIDAD DE LOS CONTENIDOS DE LOS ARCHIVOS)
 
-1) apertura y cierre de navegador edge
