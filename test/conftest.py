@@ -1,8 +1,8 @@
 import pytest
 
 
-@pytest.fixture()
-def configuracionGlobal():
+@pytest.fixture(scope="class")
+def configuracion():
     print("me ejecuto antes por requerimiento")
     yield 
     print("termino mi tarea")
