@@ -1,0 +1,6 @@
+2022-02-16 22:39:53,470 :INFO :test_logging :informacion del estado
+2022-02-16 22:39:53,470 :WARNING :test_logging :algo esta en modo de advertencia
+2022-02-16 22:39:53,470 :ERROR :test_logging :algo tiene un error
+2022-02-16 22:39:53,470 :CRITICAL :test_logging :problema critico
+2022-02-16 22:45:57,810 :ERROR :test_logging :algo tiene un error
+2022-02-16 22:45:57,810 :CRITICAL :test_logging :problema critico
