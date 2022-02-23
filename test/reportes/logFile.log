@@ -4,3 +4,38 @@
 2022-02-16 22:39:53,470 :CRITICAL :test_logging :problema critico
 2022-02-16 22:45:57,810 :ERROR :test_logging :algo tiene un error
 2022-02-16 22:45:57,810 :CRITICAL :test_logging :problema critico
+2022-02-22 22:17:18,824 :INFO :registroBase :nombre
+2022-02-22 22:17:18,824 :INFO :registroBase :Constraseña
+2022-02-22 22:17:18,824 :INFO :registroBase :Correo
+2022-02-22 22:19:49,321 :INFO :test_mostrarDatos :nombre
+2022-02-22 22:19:49,321 :INFO :test_mostrarDatos :Constraseña
+2022-02-22 22:19:49,321 :INFO :test_mostrarDatos :Correo
+2022-02-22 22:25:53,398 :INFO :test_mostrarDatos :nombre
+2022-02-22 22:25:53,398 :INFO :test_mostrarDatos :Constraseña
+2022-02-22 22:25:53,398 :INFO :test_mostrarDatos :Correo
+2022-02-22 22:25:53,403 :ERROR :test_registro :algo tiene un error
+2022-02-22 22:25:53,403 :CRITICAL :test_registro :problema critico
+2022-02-22 22:30:43,001 :INFO :test_mostrarDatos :nombre
+2022-02-22 22:30:43,001 :INFO :test_mostrarDatos :Constraseña
+2022-02-22 22:30:43,001 :INFO :test_mostrarDatos :Correo
+2022-02-22 22:30:43,003 :ERROR :test_logging :algo tiene un error
+2022-02-22 22:30:43,003 :CRITICAL :test_logging :problema critico
+2022-02-22 22:30:43,006 :ERROR :test_registro :algo tiene un error
+2022-02-22 22:30:43,006 :CRITICAL :test_registro :problema critico
+2022-02-22 22:40:46,045 :INFO :test_mostrarDatos :nombre
+2022-02-22 22:40:46,045 :INFO :test_mostrarDatos :Constraseña
+2022-02-22 22:40:46,045 :INFO :test_mostrarDatos :Correo
+2022-02-22 22:40:46,076 :ERROR :test_registro :algo tiene un error
+2022-02-22 22:40:46,076 :CRITICAL :test_registro :problema critico
+2022-02-22 22:41:41,473 :INFO :test_mostrarDatos :nombre
+2022-02-22 22:41:41,473 :INFO :test_mostrarDatos :Constraseña
+2022-02-22 22:41:41,474 :INFO :test_mostrarDatos :Correo
+2022-02-22 22:41:41,504 :ERROR :test_registro :algo tiene un error
+2022-02-22 22:41:41,504 :CRITICAL :test_registro :problema critico
+2022-02-22 22:43:33,714 :INFO :test_mostrarDatos :nombre
+2022-02-22 22:43:33,714 :INFO :test_mostrarDatos :Constraseña
+2022-02-22 22:43:33,714 :INFO :test_mostrarDatos :Correo
+2022-02-22 22:43:33,716 :ERROR :test_logging :algo tiene un error
+2022-02-22 22:43:33,716 :CRITICAL :test_logging :problema critico
+2022-02-22 22:43:33,721 :ERROR :test_registro :algo tiene un error
+2022-02-22 22:43:33,721 :CRITICAL :test_registro :problema critico

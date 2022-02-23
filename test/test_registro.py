@@ -11,8 +11,8 @@ si el nivel es warning, no imprime debug e info
 '''
 
 
-def test_logging():
-    login = logging.getLogger(__name__)
+def test_registro():
+    registro = logging.getLogger(__name__)
     #ubicacion del archivo
     manejoArchivo = logging.FileHandler("./reportes/logFile.log")
     #fomarto de escritura
@@ -20,12 +20,12 @@ def test_logging():
     #fijar formato
     manejoArchivo.setFormatter(formato)
     #agregar formato al archivo
-    login.addHandler(manejoArchivo)
+    registro.addHandler(manejoArchivo)
     # escritura en el archivo
-    login.setLevel(logging.ERROR)
-    login.debug("ejecutando como debug")
-    login.info("informacion del estado")
-    login.warning("algo esta en modo de advertencia")
-    login.error("algo tiene un error")
-    login.critical("problema critico")
+    registro.setLevel(logging.ERROR)
+    registro.debug("ejecutando como debug")
+    registro.info("informacion del estado")
+    registro.warning("algo esta en modo de advertencia")
+    registro.error("algo tiene un error")
+    registro.critical("problema critico")
 
