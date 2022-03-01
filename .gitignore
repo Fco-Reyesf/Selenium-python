@@ -3,3 +3,4 @@
 
 ### cache python ###
 /test/__pycache__/
+*.pyc
