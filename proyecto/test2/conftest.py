@@ -2,12 +2,18 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.edge.service import Service
 
+from test2.data.testMain_Data import testMainData
+
+
 # funcion para recibir parametros en la consola.
 def pytest_addoption(parser):
     parser.addoption(
         "--browser", action="store", default="edge"
     )
 
+@pytest.fixture(params=testMainData.test_main_data)
+def muchosDatos(request):
+    return request.param
 
 @pytest.fixture(scope="class")
 def setup(request):

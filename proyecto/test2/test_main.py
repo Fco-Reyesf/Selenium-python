@@ -6,7 +6,7 @@ from utilities.BaseClass import BaseClass
 
 class TestMain(BaseClass):
 
-    def test_inicio(self):
+    def test_inicio(self, muchosDatos):
         # se recomienda crear las instancias en su clase correspondiente, no en la clase principal
         paginaPrincipal = PaginaPrincipal(self.driver)
         paginaComprobar = PaginaComprobar(self.driver)
@@ -17,15 +17,16 @@ class TestMain(BaseClass):
         for tarjeta in tarjetas:
             i = i + 1
             textoTarjeta = tarjeta.text
-            if textoTarjeta == "Blackberry":
+            #if textoTarjeta == "Blackberry":
+            if textoTarjeta == muchosDatos["busqueda"]:
                 paginaComprobar.getseleccionarTarjeta()[i].click()
 
         paginaComprobar.confirmarElementosCarro()
         paginaComprobar.confirmarCompra()
 
-        paginaConfirmar.getBuscarimput().send_keys("ind")
+        paginaConfirmar.getBuscarimput().send_keys(muchosDatos["buscarPais"])
         time.sleep(5)
-        self.VerPresenciaLink("India")
+        self.VerPresenciaLink(muchosDatos["paisEncontrado"])
         paginaConfirmar.verPalabra().click()
         paginaConfirmar.aceptarCondiciones().click()
         paginaConfirmar.confirmarCompra().click()
