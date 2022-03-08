@@ -21,6 +21,3 @@ class PaginaComprobar:
 
     def confirmarCompra(self):
         return self.driver.find_element(*PaginaComprobar.botonConfirmarCompra).click()
-        
-        #confirmPage = ConfirmPage(self.driver)
-        #return confirmPage

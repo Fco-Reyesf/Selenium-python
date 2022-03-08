@@ -3,13 +3,11 @@ from test2.PaginaConfirmar import PaginaConfirmar
 from test2.PaginaComprobar import PaginaComprobar
 from test2.PaginaPrincipal import PaginaPrincipal
 from utilities.BaseClass import BaseClass
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as ec
 
 class TestMain(BaseClass):
 
     def test_inicio(self):
+        # se recomienda crear las instancias en su clase correspondiente, no en la clase principal
         paginaPrincipal = PaginaPrincipal(self.driver)
         paginaComprobar = PaginaComprobar(self.driver)
         paginaConfirmar = PaginaConfirmar(self.driver)
@@ -27,6 +25,7 @@ class TestMain(BaseClass):
 
         paginaConfirmar.getBuscarimput().send_keys("ind")
         time.sleep(5)
+        self.VerPresenciaLink("India")
         paginaConfirmar.verPalabra().click()
         paginaConfirmar.aceptarCondiciones().click()
         paginaConfirmar.confirmarCompra().click()
