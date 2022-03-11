@@ -36,7 +36,7 @@ class TestMain(BaseClass):
 
         paginaComprobar.confirmarElementosCarro()
         paginaComprobar.confirmarCompra()
-        registro.info("buscando pais que comienza con: " + muchosDatos["buscarPais"])
+        registro.info("buscando pais que comienza con: ", muchosDatos["buscarPais"])
         paginaConfirmar.getBuscarimput().send_keys(muchosDatos["buscarPais"])
         time.sleep(5)
         self.VerPresenciaLink(muchosDatos["paisEncontrado"])
