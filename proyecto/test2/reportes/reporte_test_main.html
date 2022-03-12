@@ -243,9 +243,36 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>reporte_test_main.html</h1>
-    <p>Report generated on 11-Mar-2022 at 00:46:43 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 11-Mar-2022 at 22:20:45 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
+      <tr>
+        <td>BUILD_ID</td>
+        <td>5</td></tr>
+      <tr>
+        <td>BUILD_NUMBER</td>
+        <td>5</td></tr>
+      <tr>
+        <td>BUILD_TAG</td>
+        <td>jenkins-SeleniumPythonTesting-5</td></tr>
+      <tr>
+        <td>BUILD_URL</td>
+        <td><a href="http://localhost:9090/job/SeleniumPythonTesting/5/" target="_blank">http://localhost:9090/job/SeleniumPythonTesting/5/</a></td></tr>
+      <tr>
+        <td>CI</td>
+        <td>true</td></tr>
+      <tr>
+        <td>EXECUTOR_NUMBER</td>
+        <td>0</td></tr>
+      <tr>
+        <td>JENKINS_URL</td>
+        <td><a href="http://localhost:9090/" target="_blank">http://localhost:9090/</a></td></tr>
+      <tr>
+        <td>JOB_NAME</td>
+        <td>SeleniumPythonTesting</td></tr>
+      <tr>
+        <td>NODE_NAME</td>
+        <td>master</td></tr>
       <tr>
         <td>Packages</td>
         <td>{"pluggy": "1.0.0", "py": "1.11.0", "pytest": "7.0.0"}</td></tr>
@@ -257,9 +284,12 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>{"html": "3.1.1", "metadata": "1.11.0"}</td></tr>
       <tr>
         <td>Python</td>
-        <td>3.10.1</td></tr></table>
+        <td>3.10.1</td></tr>
+      <tr>
+        <td>WORKSPACE</td>
+        <td>C:\Users\reyes\Documents\Proyectos Personales\Selenium-python</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 37.00 seconds. </p>
+    <p>1 tests ran in 36.79 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -275,12 +305,12 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">test_main.py::TestMain::test_inicio[muchosDatos0]</td>
-          <td class="col-duration">36.74</td>
+          <td class="col-duration">36.51</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div><div><img src="./imagenes/test_main.py_TestMain_test_inicio[muchosDatos0].png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div class="log">self = &lt;test2.test_main.TestMain object at 0x000002E60E081150&gt;, muchosDatos = {&#x27;buscarPais&#x27;: &#x27;ind&#x27;, &#x27;busqueda&#x27;: &#x27;Blackberry&#x27;, &#x27;paisEncontrado&#x27;: &#x27;India&#x27;}<br/><br/>    def test_inicio(self, muchosDatos):<br/>        # se recomienda crear las instancias en su clase correspondiente, no en la clase principal<br/>        registro = self.getRegistro()<br/>        paginaPrincipal = PaginaPrincipal(self.driver)<br/>        paginaComprobar = PaginaComprobar(self.driver)<br/>        paginaConfirmar = PaginaConfirmar(self.driver)<br/>        paginaPrincipal.elementosTienda()<br/>        registro.info(&quot;obtener todas los titulos de tarjetas&quot;)<br/>        tarjetas = paginaComprobar.getTitulosTarjetas()<br/>        i = -1<br/>        for tarjeta in tarjetas:<br/>            i = i + 1<br/>            textoTarjeta = tarjeta.text<br/>            #if textoTarjeta == &quot;Blackberry&quot;:<br/>            registro.info(textoTarjeta)<br/>            if textoTarjeta == muchosDatos[&quot;busqueda&quot;]:<br/>                paginaComprobar.getseleccionarTarjeta()[i].click()<br/>    <br/>        paginaComprobar.confirmarElementosCarro()<br/>        paginaComprobar.confirmarCompra()<br/>&gt;       registro.info(&quot;buscando pais que comienza con: &quot;, muchosDatos[&quot;buscarPais&quot;])<br/><br/>test_main.py:39: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1468: in info<br/>    self._log(INFO, msg, args, **kwargs)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1615: in _log<br/>    self.handle(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1625: in handle<br/>    self.callHandlers(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1687: in callHandlers<br/>    hdlr.handle(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:967: in handle<br/>    self.emit(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\site-packages\_pytest\logging.py:338: in emit<br/>    super().emit(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1106: in emit<br/>    self.handleError(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1098: in emit<br/>    msg = self.format(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:942: in format<br/>    return fmt.format(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\site-packages\_pytest\logging.py:107: in format<br/>    return super().format(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:678: in format<br/>    record.message = record.getMessage()<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;LogRecord: test_inicio, 20, C:\Users\reyes\Documents\Proyectos Personales\Selenium-python\proyecto\test2\test_main.py, 39, &quot;buscando pais que comienza con: &quot;&gt;<br/><br/>    def getMessage(self):<br/>        &quot;&quot;&quot;<br/>        Return the message for this LogRecord.<br/>    <br/>        Return the message for this LogRecord after merging any user-supplied<br/>        arguments with the message.<br/>        &quot;&quot;&quot;<br/>        msg = str(self.msg)<br/>        if self.args:<br/>&gt;           msg = msg % self.args<br/><span class="error">E           TypeError: not all arguments converted during string formatting</span><br/><br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:368: TypeError<br/> ------------------------------Captured stderr call------------------------------ <br/>--- Logging error ---
+            <div class="log">self = &lt;test2.test_main.TestMain object at 0x000001938BC8CF70&gt;<br/>muchosDatos = {&#x27;buscarPais&#x27;: &#x27;ind&#x27;, &#x27;busqueda&#x27;: &#x27;Blackberry&#x27;, &#x27;paisEncontrado&#x27;: &#x27;India&#x27;}<br/><br/>    def test_inicio(self, muchosDatos):<br/>        # se recomienda crear las instancias en su clase correspondiente, no en la clase principal<br/>        registro = self.getRegistro()<br/>        paginaPrincipal = PaginaPrincipal(self.driver)<br/>        paginaComprobar = PaginaComprobar(self.driver)<br/>        paginaConfirmar = PaginaConfirmar(self.driver)<br/>        paginaPrincipal.elementosTienda()<br/>        registro.info(&quot;obtener todas los titulos de tarjetas&quot;)<br/>        tarjetas = paginaComprobar.getTitulosTarjetas()<br/>        i = -1<br/>        for tarjeta in tarjetas:<br/>            i = i + 1<br/>            textoTarjeta = tarjeta.text<br/>            #if textoTarjeta == &quot;Blackberry&quot;:<br/>            registro.info(textoTarjeta)<br/>            if textoTarjeta == muchosDatos[&quot;busqueda&quot;]:<br/>                paginaComprobar.getseleccionarTarjeta()[i].click()<br/>    <br/>        paginaComprobar.confirmarElementosCarro()<br/>        paginaComprobar.confirmarCompra()<br/>&gt;       registro.info(&quot;buscando pais que comienza con: &quot;, muchosDatos[&quot;buscarPais&quot;])<br/><br/>test_main.py:39: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1468: in info<br/>    self._log(INFO, msg, args, **kwargs)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1615: in _log<br/>    self.handle(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1625: in handle<br/>    self.callHandlers(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1687: in callHandlers<br/>    hdlr.handle(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:967: in handle<br/>    self.emit(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\site-packages\_pytest\logging.py:338: in emit<br/>    super().emit(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1106: in emit<br/>    self.handleError(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1098: in emit<br/>    msg = self.format(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:942: in format<br/>    return fmt.format(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\site-packages\_pytest\logging.py:107: in format<br/>    return super().format(record)<br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:678: in format<br/>    record.message = record.getMessage()<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;LogRecord: test_inicio, 20, C:\Users\reyes\Documents\Proyectos Personales\Selenium-python\proyecto\test2\test_main.py, 39, &quot;buscando pais que comienza con: &quot;&gt;<br/><br/>    def getMessage(self):<br/>        &quot;&quot;&quot;<br/>        Return the message for this LogRecord.<br/>    <br/>        Return the message for this LogRecord after merging any user-supplied<br/>        arguments with the message.<br/>        &quot;&quot;&quot;<br/>        msg = str(self.msg)<br/>        if self.args:<br/>&gt;           msg = msg % self.args<br/><span class="error">E           TypeError: not all arguments converted during string formatting</span><br/><br/>C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:368: TypeError<br/> ------------------------------Captured stderr call------------------------------ <br/>--- Logging error ---
 Traceback (most recent call last):
   File &quot;C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py&quot;, line 1098, in emit
     msg = self.format(record)

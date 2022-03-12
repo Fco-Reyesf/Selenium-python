@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="36.786" timestamp="2022-03-11T22:20:08.770840" hostname="torre"><testcase classname="test_main.TestMain" name="test_inicio[muchosDatos0]" time="36.515"><failure message="TypeError: not all arguments converted during string formatting">self = &lt;test2.test_main.TestMain object at 0x000001938BC8CF70&gt;
+muchosDatos = {'buscarPais': 'ind', 'busqueda': 'Blackberry', 'paisEncontrado': 'India'}
+
+    def test_inicio(self, muchosDatos):
+        # se recomienda crear las instancias en su clase correspondiente, no en la clase principal
+        registro = self.getRegistro()
+        paginaPrincipal = PaginaPrincipal(self.driver)
+        paginaComprobar = PaginaComprobar(self.driver)
+        paginaConfirmar = PaginaConfirmar(self.driver)
+        paginaPrincipal.elementosTienda()
+        registro.info("obtener todas los titulos de tarjetas")
+        tarjetas = paginaComprobar.getTitulosTarjetas()
+        i = -1
+        for tarjeta in tarjetas:
+            i = i + 1
+            textoTarjeta = tarjeta.text
+            #if textoTarjeta == "Blackberry":
+            registro.info(textoTarjeta)
+            if textoTarjeta == muchosDatos["busqueda"]:
+                paginaComprobar.getseleccionarTarjeta()[i].click()
+    
+        paginaComprobar.confirmarElementosCarro()
+        paginaComprobar.confirmarCompra()
+&gt;       registro.info("buscando pais que comienza con: ", muchosDatos["buscarPais"])
+
+test_main.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1468: in info
+    self._log(INFO, msg, args, **kwargs)
+C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1615: in _log
+    self.handle(record)
+C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1625: in handle
+    self.callHandlers(record)
+C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1687: in callHandlers
+    hdlr.handle(record)
+C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:967: in handle
+    self.emit(record)
+C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\site-packages\_pytest\logging.py:338: in emit
+    super().emit(record)
+C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1106: in emit
+    self.handleError(record)
+C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:1098: in emit
+    msg = self.format(record)
+C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:942: in format
+    return fmt.format(record)
+C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\site-packages\_pytest\logging.py:107: in format
+    return super().format(record)
+C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:678: in format
+    record.message = record.getMessage()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;LogRecord: test_inicio, 20, C:\Users\reyes\Documents\Proyectos Personales\Selenium-python\proyecto\test2\test_main.py, 39, "buscando pais que comienza con: "&gt;
+
+    def getMessage(self):
+        """
+        Return the message for this LogRecord.
+    
+        Return the message for this LogRecord after merging any user-supplied
+        arguments with the message.
+        """
+        msg = str(self.msg)
+        if self.args:
+&gt;           msg = msg % self.args
+E           TypeError: not all arguments converted during string formatting
+
+C:\Users\reyes\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py:368: TypeError</failure></testcase></testsuite></testsuites>
