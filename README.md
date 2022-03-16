@@ -54,4 +54,14 @@ ejemplo de como recorre bajando pasando por 2 etiquetas hasta llegar a un parent
 ```
 $("table[id='productCartTables'] tbody tr td:nth-child(5) p")
 ```
-# 
+# Explicación carpeta test
+
+Dentro de las carpetas de “test”, se encuentran ejemplos con algunas explicaciones de cómo realizar pruebas unitarias con selenium.
+
+Se encuentras archivos que pueden generar reportes y registros de los resultados de las pruebas o avances.
+
+# Explicación carpeta proyecto
+
+Se encuentras dos proyectos
+1)	Test:  el cual es un proyecto con "orden" de archivos
+2)	Test2: es un proyecto completo "ordenado" con entrega de datos, reporte y ejecución de pruebas.
