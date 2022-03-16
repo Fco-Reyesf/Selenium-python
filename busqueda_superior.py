@@ -81,8 +81,6 @@ for valor in valores:
 
 assert contador == int(monto_original)
 
-## para el siguiente episodio : ---------> $x("//tr/td[5]/p")
-
 print("LA PRUEBA FINALIZO CON EXITO")
 
 driver.close()
